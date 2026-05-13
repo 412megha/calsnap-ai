@@ -1,0 +1,147 @@
+.card {
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.kcal {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rose-text);
+  white-space: nowrap;
+  margin-left: 8px;
+}
+.macros {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.macro {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 999px;
+}
+.tag {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.5);
+}
+.itemCount {
+  font-size: 10px;
+  color: var(--text-muted);
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.5);
+  font-weight: 500;
+}
+.expandBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0 2px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.expandBtn:hover { color: var(--rose-dark); }
+
+/* ── Collapsible sub-items ── */
+.itemsList {
+  margin-top: 8px;
+  padding-top: 7px;
+  border-top: 1px solid rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.subItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  border-left: 2.5px solid var(--rose-dark);
+  border-radius: 0 6px 6px 0;
+  background: rgba(255,255,255,0.45);
+  margin-left: 4px;
+}
+.subLeft {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+}
+.subDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.subName {
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 500;
+}
+.subQty {
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+.subKcal {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--rose-text);
+  white-space: nowrap;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.del {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  color: var(--text-muted);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.2s;
+}
+.del:hover { background: var(--surface-rose); color: var(--rose-text); }

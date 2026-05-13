@@ -1,0 +1,15 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--surface-rose);
+  border: 1.5px solid var(--rose-dark);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+.text {
+  font-size: 12px;
+  color: var(--rose-dark);
+  font-weight: 500;
+}
+.text em { font-style: italic; font-weight: 600; }

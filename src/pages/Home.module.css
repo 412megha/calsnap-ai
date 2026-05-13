@@ -1,0 +1,124 @@
+.home { padding-bottom: 90px; }
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 20px 0;
+}
+.greeting {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text);
+}
+.date { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.hero {
+  margin: 16px 20px 0;
+  background: var(--hero-gradient);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid rgba(212,96,122,0.25);
+}
+.blob1, .blob2, .blob3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.blob1 {
+  width: 120px; height: 120px;
+  top: -40px; right: -30px;
+  background: radial-gradient(circle, rgba(212,96,122,0.25), transparent);
+}
+.blob2 {
+  width: 80px; height: 80px;
+  bottom: 10px; left: 20px;
+  background: radial-gradient(circle, rgba(144,96,200,0.2), transparent);
+}
+.blob3 {
+  width: 60px; height: 60px;
+  top: 20px; left: 40%;
+  background: radial-gradient(circle, rgba(208,112,48,0.18), transparent);
+}
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+.calBlock { display: flex; flex-direction: column; align-items: center; }
+.calNum {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--rose-dark);
+  line-height: 1.1;
+}
+.calUnit { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.calDivider { width: 1px; height: 40px; background: rgba(212,96,122,0.25); }
+.heroFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+.forecast { font-size: 12px; color: var(--text-muted); }
+.forecast em { color: var(--lavender-dark); font-style: italic; }
+.prefBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.prefDot { width: 7px; height: 7px; border-radius: 50%; }
+
+.rings {
+  display: flex;
+  gap: 10px;
+  padding: 20px 20px 0;
+}
+.section { padding: 16px 20px 0; }
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sectionTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--text);
+}
+.seeAll {
+  font-size: 12px;
+  color: var(--rose-dark);
+  cursor: pointer;
+}
+.empty {
+  text-align: center;
+  padding: 28px 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.scanBtn {
+  margin-top: 12px;
+  background: linear-gradient(135deg, var(--rose), var(--lavender-dark));
+  color: white;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}

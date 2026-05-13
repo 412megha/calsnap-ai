@@ -1,0 +1,92 @@
+.progress { padding: 0 20px 90px; }
+.header { padding-top: 24px; margin-bottom: 20px; }
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-style: italic;
+  color: var(--text);
+}
+.sub { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+.card {
+  background: white;
+  border: 1.5px solid #ecdee8;
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.cardTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.tooltip {
+  background: white;
+  border: 1.5px solid #f0a8b8;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.tooltipLabel { color: var(--text-muted); margin-bottom: 2px; }
+.dayCards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.dayCard {
+  border: 1px solid;
+  border-radius: var(--radius);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-align: center;
+}
+.dayEmoji { font-size: 22px; }
+.dayLabel { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.dayValue {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text);
+}
+.dayKcal { font-size: 12px; color: var(--text-muted); }
+.reportSection { margin-bottom: 20px; }
+.reportSectionTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.reportCard {
+  background: linear-gradient(135deg, #e4d8f8, #fad4e0);
+  border: 1.5px solid #b8a0e0;
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.reportText { font-size: 14px; line-height: 1.65; color: var(--text); margin-bottom: 8px; }
+.reportMeta { font-size: 11px; color: var(--text-muted); margin-bottom: 12px; }
+.reportEmpty { text-align: center; padding: 8px 0; }
+.reportEmpty p { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; }
+.reportBtn {
+  background: linear-gradient(135deg, var(--lavender-dark), var(--rose-dark));
+  color: white;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.reportBtn:disabled { opacity: 0.6; cursor: default; }
+.seeMoreBtn {
+  background: none;
+  border: none;
+  color: var(--rose-dark);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 0;
+  display: block;
+  margin-top: 4px;
+}

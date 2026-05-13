@@ -1,0 +1,63 @@
+.card {
+  background: linear-gradient(135deg, #e4d8f8, #fad4e0);
+  border: 1.5px solid #b8a0e0;
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.title {
+  flex: 1;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--lavender-text);
+}
+.refresh {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1.5px solid rgba(144, 96, 200, 0.35);
+  color: var(--lavender-dark);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  line-height: 1;
+  padding: 0;
+  flex-shrink: 0;
+}
+.refresh:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--lavender-dark);
+  transform: scale(1.1);
+}
+.refresh:active { transform: scale(0.95); }
+
+.spin {
+  display: inline-block;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.body { min-height: 44px; }
+.tip {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text);
+}
+.loader {
+  font-size: 13px;
+  color: var(--lavender-dark);
+  font-style: italic;
+}

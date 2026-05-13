@@ -1,0 +1,89 @@
+.diary { padding: 0 20px 90px; }
+.header { padding-top: 24px; margin-bottom: 16px; }
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-style: italic;
+  color: var(--text);
+}
+.date { font-size: 13px; color: var(--text-muted); }
+.totalCard {
+  background: linear-gradient(135deg, #fde8ee, #ede8fc);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(244,184,200,0.3);
+}
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.totalLabel { font-size: 13px; color: var(--text-muted); }
+.totalKcal {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--rose-dark);
+}
+.macroSummary {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.groups { display: flex; flex-direction: column; gap: 20px; }
+.group {}
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0e8ee;
+}
+.groupIcon { font-size: 16px; }
+.groupName {
+  flex: 1;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text);
+}
+.groupKcal { font-size: 13px; color: var(--text-muted); }
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+.emptyIllustration {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: var(--surface-rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.emptyFlower { font-size: 36px; }
+.emptyTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.emptySub { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
+.snapBtn {
+  background: linear-gradient(135deg, var(--rose), var(--lavender-dark));
+  color: white;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}

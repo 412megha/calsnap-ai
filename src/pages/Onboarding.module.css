@@ -1,0 +1,218 @@
+.page {
+  min-height: 100dvh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  position: relative;
+  overflow: hidden;
+}
+.deco1 {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fde8ee 0%, transparent 70%);
+  pointer-events: none;
+}
+.deco2 {
+  position: absolute;
+  bottom: 100px;
+  left: -60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ede8fc 0%, transparent 70%);
+  pointer-events: none;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  gap: 6px;
+}
+.logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-style: italic;
+  color: var(--rose-dark);
+}
+.tagline {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f0e0e8;
+  transition: all 0.3s;
+}
+.dotActive {
+  background: var(--rose-dark);
+  width: 24px;
+  border-radius: 4px;
+}
+.dotDone { background: var(--rose); }
+.content {
+  flex: 1;
+  padding-top: 32px;
+  overflow: hidden;
+}
+.slide { width: 100%; }
+.stepTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.stepSub { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; }
+.photoWrap { display: flex; justify-content: center; margin-bottom: 28px; }
+.photoBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-rose);
+  border: 2px dashed var(--rose);
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.photoImg { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.photoPlaceholder { opacity: 0.7; }
+.photoLabel { display: none; }
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--rose);
+  border-radius: var(--radius);
+  background: var(--surface-rose);
+  font-size: 16px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input:focus { border-color: var(--rose-dark); }
+.goalRow {
+  background: var(--surface-peach);
+  border: 1px solid var(--peach);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.goalLabel { font-size: 13px; color: var(--text-muted); margin-bottom: 10px; display: block; }
+.goalInput {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.stepper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  border: 1.5px solid var(--peach);
+  font-size: 20px;
+  color: var(--peach-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.numInput {
+  flex: 1;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--peach-dark);
+  outline: none;
+  -moz-appearance: textfield;
+}
+.numInput::-webkit-outer-spin-button,
+.numInput::-webkit-inner-spin-button { -webkit-appearance: none; }
+.sectionLabel { font-size: 13px; color: var(--text-muted); margin-bottom: 10px; }
+.prefGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.prefCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 10px;
+  border-radius: var(--radius);
+  border: 1.5px solid #f0e0e8;
+  background: var(--surface-rose);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.prefActive {
+  border-color: var(--rose-dark);
+  background: white;
+  box-shadow: 0 2px 12px rgba(201,122,144,0.15);
+}
+.prefDot { width: 12px; height: 12px; border-radius: 50%; }
+.prefLabel { font-size: 13px; font-weight: 600; color: var(--text); }
+.prefDesc { font-size: 11px; color: var(--text-muted); text-align: center; }
+.goalGrid { display: flex; flex-direction: column; gap: 10px; }
+.goalCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1.5px solid #f0e0e8;
+  background: var(--surface-rose);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+.goalActive {
+  border-color: var(--rose-dark);
+  background: white;
+  box-shadow: 0 2px 12px rgba(201,122,144,0.15);
+}
+.goalIcon { font-size: 28px; }
+.goalLabel { font-weight: 600; font-size: 14px; color: var(--text); flex: 1; }
+.goalDesc { font-size: 12px; color: var(--text-muted); }
+.footer {
+  display: flex;
+  gap: 10px;
+  padding: 24px 0 40px;
+}
+.back {
+  padding: 14px 20px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--rose);
+  color: var(--rose-dark);
+  font-size: 15px;
+  background: transparent;
+  cursor: pointer;
+}
+.next {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--rose), var(--lavender-dark));
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.next:disabled { opacity: 0.5; cursor: default; }

@@ -1,0 +1,288 @@
+.profile { padding: 0 20px 90px; }
+.header {
+  padding-top: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.photoWrap { flex-shrink: 0; }
+.photo {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--rose);
+}
+.photoFallback {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: var(--surface-rose);
+  border: 3px solid var(--rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info { flex: 1; }
+.name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--text);
+}
+.goal { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+.editBtn {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--rose-text);
+  background: var(--surface-rose);
+  border: 1.5px solid var(--rose-dark);
+  border-radius: 999px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.editBlock { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.nameInput {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid var(--rose-dark);
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  background: var(--surface-rose);
+  color: var(--text);
+  outline: none;
+}
+.editRow { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.editLabel { font-size: 13px; color: var(--text-muted); }
+.numInput {
+  width: 80px;
+  padding: 6px 10px;
+  border: 1.5px solid var(--peach-dark);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  text-align: center;
+  background: var(--surface-peach);
+  color: var(--text);
+  outline: none;
+  -moz-appearance: textfield;
+}
+.numInput::-webkit-outer-spin-button,
+.numInput::-webkit-inner-spin-button { -webkit-appearance: none; }
+.editActions { display: flex; gap: 8px; }
+.cancelBtn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--rose-dark);
+  color: var(--rose-text);
+  font-size: 13px;
+  cursor: pointer;
+}
+.saveBtn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--rose-dark), var(--lavender-dark));
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.streakCard {
+  background: linear-gradient(135deg, #fad4e0, #e4d8f8);
+  border: 1.5px solid #e8a0b8;
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 16px;
+}
+.streakTop { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.streakTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px;
+  color: var(--rose-text);
+}
+.streakTitle em { font-style: italic; }
+.streakSub { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; }
+.milestones { display: flex; gap: 8px; }
+.milestone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 4px;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.45);
+  font-size: 12px;
+  color: var(--text-muted);
+  border: 1px solid rgba(212,96,122,0.2);
+}
+.milestoneAchieved {
+  background: white;
+  border-color: var(--rose-dark);
+  color: var(--rose-text);
+  font-weight: 600;
+}
+
+.settingsCard {
+  background: white;
+  border: 1.5px solid #ecdee8;
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.settingsTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.toggleRow { display: flex; align-items: center; justify-content: space-between; }
+.prefBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid #e0d0d8;
+  background: var(--bg);
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.prefBtn + .prefBtn { margin-left: 8px; }
+.prefActiveVeg {
+  border-color: var(--matcha-dark);
+  background: var(--surface-matcha);
+  color: var(--matcha-text);
+  font-weight: 600;
+}
+.prefActiveNonVeg {
+  border-color: var(--rose-dark);
+  background: var(--surface-rose);
+  color: var(--rose-text);
+  font-weight: 600;
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.prefNote { font-size: 12px; color: var(--text-muted); margin-top: 10px; }
+.settingRow { display: flex; align-items: center; justify-content: space-between; }
+.settingLabel { font-size: 14px; color: var(--text); }
+.toggle {
+  width: 44px; height: 24px;
+  border-radius: 12px;
+  background: #e0d0d8;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.toggleOn { background: var(--rose-dark); }
+.toggleThumb {
+  position: absolute;
+  top: 2px; left: 2px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.toggleOn .toggleThumb { transform: translateX(20px); }
+
+/* ── Streak calendar ── */
+.calNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.calTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text);
+}
+.calArrow {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--surface-lavender);
+  border: 1px solid #b8a0e0;
+  color: var(--lavender-text);
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.calArrow:hover { background: var(--lavender); }
+.calArrow:disabled { opacity: 0.35; cursor: default; }
+
+.weekdayRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 4px;
+}
+.weekdayLabel {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 3px 0;
+  letter-spacing: 0.04em;
+}
+
+.calGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+.calEmpty { aspect-ratio: 1; }
+.calCell {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background: var(--surface-lavender);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  cursor: default;
+  position: relative;
+}
+.calDayNum {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--lavender-text);
+  line-height: 1;
+}
+.calFlowerDot {
+  font-size: 7px;
+  line-height: 1;
+  color: var(--rose-dark);
+}
+.calLogged {
+  background: var(--surface-rose);
+}
+.calLogged .calDayNum { color: var(--rose-text); font-weight: 600; }
+.calToday {
+  background: #f0a0b8;
+  outline: 2px solid var(--rose-dark);
+  outline-offset: -2px;
+}
+.calToday .calDayNum { color: var(--rose-text); font-weight: 700; }
+.calFuture {
+  background: transparent;
+}
+.calFuture .calDayNum { color: var(--text-muted); font-weight: 400; opacity: 0.5; }
+
+.calFooter {
+  margin-top: 12px;
+  font-size: 13px;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--rose-text);
+  text-align: center;
+}
